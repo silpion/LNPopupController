@@ -7,6 +7,10 @@ Pod::Spec.new do |s|
 	s.author = { "LeoNatan" => "" }
 	s.platform = :ios, '8.0'
 	s.source = { :git => "https://github.com/silpion/LNPopupController.git" }
-	s.source_files = 'Pod/LNPopupController/LNPopupController/*','Pod/LNPopupController/LNPopupController/Private/*'
+	# s.source_files = 'Pod/LNPopupController/LNPopupController/*','Pod/LNPopupController/LNPopupController/Private/*'
 	s.requires_arc = true
+	s.source_files = 'LNPopupController//*.{h,m}', 'LNPopupController///*.{h,m}'
+	s.public_header_files = 'LNPopupController//.h'
+	s.private_header_files = 'LNPopupController//Private/.h'
+	s.resources = 'LNPopupController/*.xcassets'
 end
