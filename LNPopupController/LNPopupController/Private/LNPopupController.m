@@ -41,6 +41,11 @@ static const CGFloat        LNPopupBarGestureSnapOffset = 40;
 {
 	return NO;
 }
+    
+- (BOOL)isInterruptible
+{
+    return NO;
+}
 
 - (NSTimeInterval)transitionDuration
 {
