@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
 	s.requires_arc = true
 	s.source_files = 'LNPopupController/**/*.{h,m}', 'LNPopupController///*.{h,m}'
 	s.public_header_files = 'LNPopupController/**/.h'
-	s.private_header_files = 'LNPopupController/**/Private/.h'\
-    	.exclude('LNPopupController/Private/LNPopupController.h')
+	s.private_header_files = 'LNPopupController/**/Private/.h'
 	s.resources = 'LNPopupController/*.xcassets'
 end
